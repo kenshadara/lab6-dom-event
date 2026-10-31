@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+h1 {
+    color: #173f75;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: #3478c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #245a99;
+}
+
+.highlight {
+    color: #173f75;
+    background-color: #e6f1ff;
+    border-left: 4px solid #3478c8;
+    padding: 12px;
+}
+
+.teks-besar {
+    font-size: 1.4rem;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+.selesai span {
+    text-decoration: line-through;
+    color: #687386;
+}
+
+li button {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* Mini Project Workshop */
+.workshop {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workshop label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.workshop input,
+.workshop select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.workshop button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#pesanWorkshop {
+    font-weight: bold;
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    .workshop {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+.sembunyi {
+    display: none;
+}
