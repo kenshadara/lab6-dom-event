@@ -111,3 +111,46 @@ Screenshot berikut menunjukkan pesan konfirmasi setelah formulir pendaftaran wor
 
 ## G. Kesimpulan
 Praktikum ini membantu memahami penggunaan DOM dan event pada JavaScript untuk membuat halaman web lebih interaktif. Melalui latihan dan eksperimen, JavaScript dapat digunakan untuk mengubah konten, mengatur tampilan CSS, menghitung karakter, memvalidasi formulir, mengelola daftar tugas, serta menampilkan dan menyembunyikan elemen HTML.
+
+## H. Pertanyaan Evaluasi
+
+### 1. Apa yang dimaksud dengan DOM dan apa manfaatnya?
+
+DOM (Document Object Model) adalah representasi dokumen HTML dalam bentuk struktur objek yang dapat diakses oleh JavaScript. DOM bermanfaat untuk mengubah teks, gaya, atribut, dan elemen HTML secara dinamis.
+
+### 2. Apa perbedaan getElementById(), querySelector(), dan querySelectorAll()?
+
+- `getElementById()` digunakan untuk memilih elemen berdasarkan ID.
+- `querySelector()` digunakan untuk memilih elemen pertama yang sesuai dengan selector CSS.
+- `querySelectorAll()` digunakan untuk memilih semua elemen yang sesuai dengan selector CSS.
+
+### 3. Apa fungsi addEventListener() dan sebutkan tiga contoh event?
+
+`addEventListener()` berfungsi untuk menjalankan kode JavaScript ketika suatu event terjadi pada elemen HTML.
+
+Contoh event:
+1. `click` — ketika elemen diklik.
+2. `input` — ketika nilai input berubah.
+3. `change` — ketika nilai pilihan berubah atau dikonfirmasi.
+
+### 4. Mengapa event.preventDefault() digunakan pada event submit form?
+
+`event.preventDefault()` digunakan untuk mencegah perilaku bawaan form, seperti memuat ulang halaman ketika tombol submit ditekan. Dengan demikian, JavaScript dapat melakukan validasi data terlebih dahulu.
+
+### 5. Apa perbedaan textContent dan innerHTML dari sisi penggunaan dan keamanan?
+
+- `textContent` digunakan untuk membaca atau mengubah teks pada elemen HTML tanpa memprosesnya sebagai kode HTML.
+- `innerHTML` digunakan untuk membaca atau mengubah isi HTML suatu elemen.
+
+Dari sisi keamanan, `textContent` lebih aman untuk menampilkan input pengguna karena teks tidak diproses sebagai HTML. Penggunaan `innerHTML` dengan input yang tidak tepercaya dapat menimbulkan risiko serangan XSS.
+
+### 6. Bagaimana classList.toggle() membantu mengubah tampilan elemen?
+
+`classList.toggle()` digunakan untuk menambahkan class CSS jika belum ada atau menghapusnya jika sudah ada. Dengan cara ini, JavaScript dapat mengubah tampilan elemen, misalnya menyembunyikan atau menampilkan paragraf.
+
+### 7. Sebutkan minimal tiga skenario pengujian validasi form.
+
+1. Kolom nama dikosongkan untuk memastikan sistem menampilkan pesan kesalahan.
+2. Nama diisi kurang dari tiga karakter untuk memastikan validasi nama berjalan.
+3. Email diisi dengan format yang tidak valid untuk memastikan sistem menolak alamat email tersebut.
+4. Semua data diisi dengan benar untuk memastikan pendaftaran berhasil.
